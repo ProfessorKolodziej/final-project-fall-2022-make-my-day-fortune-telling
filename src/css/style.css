@@ -1,35 +1,71 @@
-/*
-CSS controls the styling of the page.
-You can write a color in directly, or use variables.
-Try changing the color from blue to red in the
-primary color variable below.
-*/
+/* about page */
 
-:root {
-	--color-primary: blue;
-	--color-secondary: #c00;
+.about,
+fc-1,
+fc-result,
+df-1,
+df-result,
+ba-1,
+ba-result {
+	display: flex;
+	min-width: 320px;
+	padding: 30px 0;
+	gap: 30px;
+	flex-direction: column;
+	align-items: center;
+}
+.about {
+	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/about-back.png'), lightgray 50% / cover no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.navigate {
+	display: flex;
+	padding: 5px 20px;
+	align-items: center;
+	justify-content: space-between;
+	align-self: stretch;
+	text-align: center;
+	font-family: Texturina, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+}
+#about-nav-about {
+	color: #D4567D;
+}
+#about-nav-df,
+#about-nav-fc,
+#about-nav-ba {
+	color: #302492;
 }
 
-/*
-CSS doesn't allow variables to be used in media
-queries just yet, but you can use these values
-to help you out.
-
-	--size-xs: 320px;
-	--size-sm: 480px;
-	--size-md: 768px;
-	--size-lg: 1024px;
-	--size-xl: 1200px;
-*/
-
+.title-part {
+	display: flex;
+	padding: 10px 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: stretch;
+	background: rgba(255, 255, 255, 0.60);
+}
 h1 {
-	color: var(--color-primary);
+	text-align: center;
+	font-family: Merienda, sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	background: radial-gradient(50% 50% at 50% 50%, #D4567D 20%, #302492 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+h3 {
+	text-align: center;
+	font-family: Texturina, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	background: radial-gradient(50% 50% at 50% 50%, #D4567D 20%, #302492 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-/* This uses the same value as --size-xs. */
-@media screen and (width >= 320px) {
-	.content-container {
-		margin: 0 auto;
-		max-width: 768px;
-	}
-}

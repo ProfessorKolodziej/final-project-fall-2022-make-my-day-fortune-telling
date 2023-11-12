@@ -7,26 +7,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Update your description here" />
 	<title>Make My Day</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800;900&family=Texturina:opsz,wght@12..72,400;12..72,500;12..72,600;12..72,700;12..72,800;12..72,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 	<!--
 		This is where you should link your CSS file.
 	-->
 </head>
 
 <body>
-	<main class="About">
-		<nav class = "navigate">
-			<span class="nav-about">ABOUT</span>
-			<span class="nav-df">DAILY FORTUNE</span>
-			<span class="nav-fc">FORTUNE COOKIE</span>
-			<span class="nav-ba">BOOK OF ANSWERS</span>
+	<main class="about">
+		<nav class="navigate">
+			<span id="about-nav-about" class="nav-about">ABOUT</span>
+			<span id="about-nav-df"  class="nav-df">DAILY FORTUNE</span>
+			<span id="about-nav-fc" class="nav-fc">FORTUNE COOKIE</span>
+			<span id="about-nav-ba" class="nav-ba">BOOK OF ANSWERS</span>
 		</nav>
 		
 		<section class="title-part">
-			<h1 class="title">Make My Day</span>
-			<h2 class="slogan">Illuminate Tomorrow, Embrace Today</span>
+			<h1 class="title">Make My Day</h1>
+			<h3 class="slogan">Illuminate Tomorrow, Embrace Today</h3>
 		</section>
 		
-		<section class="about-part">
+		<section id="about-intro" class="intro-part">
 			<h2 class="about-title">About Make My Day</h2>
 			<p class="about-content">
 				In today's fast-paced and interconnected world, people feel overwhelmed by work, personal life, and societal expectations. Constant information flow and comparing oneself to others can cause stress and a feeling of being adrift, leading to nervousness and anxiety. People often seek tools or methods to alleviate stress.
@@ -37,7 +41,7 @@
 			</p>
 		</section>
 		
-		<h4 class="back-to-top">Back to Top</h4>
+		<button type="button" id="about-back-to-top" class="back-to">Back to Top</button>
 	</main>
 	<!--
 		This is where you should link your JS file.
