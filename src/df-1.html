@@ -32,11 +32,11 @@
 			</p>
 		</section>
 		
+		<h3 id="df-instruction" class="instruction">In the following sections, enter relevant personal information and concerns, and then receive an exclusive prediction and tips.</h3>
+
 		<section class="quiz-part">
-			<h3 id="df-instruction" class="instruction">In the following sections, enter relevant personal information and concerns, and then receive an exclusive prediction and tips.</h3>
-			
-			<h3 id="df-date" class="instruction"></h3>
-			
+			<h3 id="df-date" class="date"></h3>
+
 			<section id="quiz-1" class="quiz" >
 				<legend class="quiz-title">Date of Birth</legend>
 				<p id="quiz-1-tips">Swipe up and down to pick your birth date.</p>
@@ -44,6 +44,7 @@
 					<input type="date" id="birthdate" name="birthdate">
 				</form>
 			</section>
+
 			<section id="quiz-2" class="quiz">
 				<legend class="quiz-title">Gender</legend>
 				<div class="gender-options">
@@ -61,6 +62,7 @@
 					</label>
 				</div>
 			</section>
+			
 			<section id="quiz-3" class="quiz">
 				<legend class="quiz-title">Current Mood</legend>
 				<div class="current-mood-options">
@@ -87,7 +89,7 @@
 		</section>
 
 		<button type="submit" id="df-to-see-result" class="main-button">Let's see the result!</button>
-		<br>
+
 		<button type="button" id="df-back-to-home-page" class="back-to">Back to Home Page</button>
 	</main>
 
@@ -124,12 +126,8 @@
 
 <script>
 var today = new Date();
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var monthName = months[today.getMonth()];
-var day = today.getDate();
-var year = today.getFullYear();
-
-var formattedDate = monthName + ' ' + (day < 10 ? '0' + day : day) + ', ' + year;
+var options = { year: 'numeric', month: 'long', day: 'numeric' };
+var formattedDate = today.toLocaleDateString('en-US', options);
 document.getElementById('df-date').innerHTML = formattedDate;
 </script>
 
