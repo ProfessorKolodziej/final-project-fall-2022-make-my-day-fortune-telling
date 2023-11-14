@@ -4,7 +4,6 @@
 }
 
 /* about page */
-
 .about,
 .fc-1,
 .fc-result,
@@ -346,8 +345,12 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 5px;
+	gap: 10px;
 	align-self: stretch;
+}
+#quiz-1-tips {
+	font-size: 9px;
+	line-height:10px;
 }
 .date,
 #quiz-1-tips {
@@ -361,6 +364,9 @@ p {
 }
 input {
 	color: #1B7676;
+	font-family: Texturina, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
 }
 .gender-options {
 	color: #1B7676;
@@ -465,3 +471,4 @@ h4 {
 	font-weight: 600;
 	line-height: normal;
 }
+
