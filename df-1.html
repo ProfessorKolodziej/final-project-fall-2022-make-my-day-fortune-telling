@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Update your description here" />
+	<title>Make My Day</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800;900&family=Texturina:opsz,wght@12..72,400;12..72,500;12..72,600;12..72,700;12..72,800;12..72,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!--
+		This is where you should link your CSS file.
+	-->
+</head>
+
+<body>
+	<main class="df-1">
+		<nav class="navigate">
+			<a href="index.html" id="df-nav-about" class="nav-about">ABOUT</a>
+			<a href="df-1.html" id="df-nav-df"  class="nav-df">DAILY FORTUNE</a>
+			<a href="fc-1.html" id="df-nav-fc" class="nav-fc">FORTUNE COOKIE</a>
+			<a href="ba-1.html" id="df-nav-ba" class="nav-ba">BOOK OF ANSWERS</a>
+		</nav>
+
+		<section id="df-intro" class="intro-part">
+			<h2 class="df-title">Daily Fortune</h2>
+			<p class="df-content">
+				In this dynamic world, Daily Fortune is a guiding beacon, offering diverse insights and tailored guidance for each user's unique journey. It encourages personal reflection, a mindful approach, and the appreciation of life's subtle details for profound fulfillment.
+			</p>
+		</section>
+		
+		<h3 id="df-instruction" class="instruction">In the following sections, enter relevant personal information and concerns, and then receive an exclusive prediction and tips.</h3>
+
+		<section class="quiz-part">
+			<h3 id="df-date" class="date"></h3>
+
+			<section id="quiz-1" class="quiz" >
+				<legend class="quiz-title">Date of Birth</legend>
+				<p id="quiz-1-tips">Swipe up and down to pick your birth date.</p>
+				<form action="submit_form.php" method="post">
+					<input type="date" id="birthdate" name="birthdate">
+				</form>
+			</section>
+
+			<section id="quiz-2" class="quiz">
+				<legend class="quiz-title">Gender</legend>
+				<div class="gender-options">
+					<label>
+						<input type="radio" name="gender" value="Male">Male
+					</label>
+					<label>
+						<input type="radio" name="gender" value="Female">Female
+					</label>
+					<label>
+						<input type="radio" name="gender" value="Other">Other
+					</label>
+					<label>
+						<input type="radio" name="gender" value="Prefer Not to Say">Prefer not to say
+					</label>
+				</div>
+			</section>
+			
+			<section id="quiz-3" class="quiz">
+				<legend class="quiz-title">Current Mood</legend>
+				<div class="current-mood-options">
+					<label>
+						<input type="checkbox" name="Current Mood" value="Happy/Joyful">Happy/Joyful
+					</label>
+					<label>
+						<input type="checkbox" name="Current Mood" value="Stressed/Overwhelmed">Stressed/Overwhelmed
+					</label>
+					<label>
+						<input type="checkbox" name="Current Mood" value="Excited/Energetic">Excited/Energetic
+					</label>
+					<label>
+						<input type="checkbox" name="Current Mood" value="Anxious/Nervous">Anxious/Nervous
+					</label>
+					<label>
+						<input type="checkbox" name="Current Mood" value="Relaxed/Calm">Relaxed/Calm
+					</label>
+					<label>
+						<input type="checkbox" name="Current Mood" value="Sad/Upset">Sad/Upset
+					</label>
+				</div>
+			</section>
+		</section>
+
+		<a href="df-result.html" type="submit" id="df-to-see-result" class="main-button">Let's see the result!</a>
+
+		<a href="index.html" type="button" id="df-back-to-home-page" class="back-to">Back to Home Page</a>
+	</main>
+
+	<div id="overlay">
+		<div class="overlay-detail">
+			<h4 class="overlay-title">Happy/Joyful</h4>
+			<p class="overlay-content">Reflects contentment, cheer, and delight.</p>
+		</div>
+		<div class="overlay-detail">
+			<h4 class="overlay-title">Excited/Energetic</h4>
+			<p class="overlay-content">Illustrates enthusiasm, anticipation, or eagerness.</p>
+		</div>
+		<div class="overlay-detail">
+			<h4 class="overlay-title">Stressed/Overwhelmed</h4>
+			<p class="overlay-content">Denotes a sense of being under pressure or overwhelmed.</p>
+		</div>
+		<div class="overlay-detail">
+			<h4 class="overlay-title">Anxious/Nervous</h4>
+			<p class="overlay-content">Captures feelings of worry, unease, or restlessness.</p>
+		</div>
+		<div class="overlay-detail">
+			<h4 class="overlay-title">Relaxed/Calm</h4>
+			<p class="overlay-content">Represents serenity, peace, or tranquility.</p>
+		</div>
+		<div class="overlay-detail">
+			<h4 class="overlay-title">Sad/Upset</h4>
+			<p class="overlay-content">Conveys feelings of sadness, unhappiness, or distress.</p>
+		</div>
+	</div>
+
+	<!--
+		This is where you should link your JS file.
+	-->
+
+<script>
+var today = new Date();
+var options = { year: 'numeric', month: 'long', day: 'numeric' };
+var formattedDate = today.toLocaleDateString('en-US', options);
+document.getElementById('df-date').innerHTML = formattedDate;
+</script>
+
+</body>
+
+</html>

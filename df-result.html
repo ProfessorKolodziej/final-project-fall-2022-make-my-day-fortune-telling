@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Update your description here" />
+	<title>Make My Day</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800;900&family=Texturina:opsz,wght@12..72,400;12..72,500;12..72,600;12..72,700;12..72,800;12..72,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!--
+		This is where you should link your CSS file.
+	-->
+</head>
+
+<body>
+	<main class="df-result">
+		<nav class="navigate">
+			<a href="index.html" id="df-nav-about" class="nav-about">ABOUT</a>
+			<a href="df-1.html" id="df-nav-df"  class="nav-df">DAILY FORTUNE</a>
+			<a href="fc-1.html" id="df-nav-fc" class="nav-fc">FORTUNE COOKIE</a>
+			<a href="ba-1.html" id="df-nav-ba" class="nav-ba">BOOK OF ANSWERS</a>
+		</nav>
+
+		<section id="df-result-intro" class="intro-part">
+			<h2 class="df-title">My Today's Fortune</h2>
+			<section class="score">
+				<h1 id="randomscore" class="score-result"></h1>
+				<h4 class="score-total">/100</h4>
+			</section>
+			<p class="df-result-content">
+				Overall, things appear quite positive today. Even in the face of challenges, you're likely to find solutions effortlessly. Your adaptable nature and resilience will guide you through any difficulties, allowing you to navigate the day with ease and success.
+			</p>
+		</section>
+		
+		<section class="explaination-part">
+			<div id="relationships" class="explain">
+				<h3 id="relationships-title" class="explaination-title">Relationships</h3>
+				<p id="relationships-content" class="explaination-content">In relationships, whether single, in a romantic relationship, or married, the day promises better understanding and harmony. Focus on fostering connections with friends, family, and colleagues. Embrace open and empathetic conversations, encouraging cooperation and understanding for smoother interactions.</p>
+			</div>
+
+			<div id="health-wellness" class="explain">
+				<h3 id="health-wellness-title" class="explaination-title">Health & Wellness</h3>
+				<p id="health-wellness-content" class="explaination-content">Health-wise, it's a good day. Ensure you maintain a balance between rest and activity. Listen to your body's cues and engage in activities that promote both physical and mental well-being. Prioritize self-care and find serenity in your routine.</p>
+			</div>
+
+			<div id="career-education" class="explain">
+				<h3 id="career-education-title" class="explaination-title">Career & Education</h3>
+				<p id="career-education-content" class="explaination-content">Embrace new programs and seize today's opportunities for growth and advancement in the career path. Simultaneously, whether a student or pursuing personal development, do not focus too much on grades. Instead, only concentrate on acquiring new knowledge and skills that will help to grow.</p>
+			</div>
+
+			<div id="wealth-finance" class="explain">
+				<h3 id="wealth-finance-title" class="explaination-title">Wealth & Finance</h3>
+				<p id="wealth-finance-content" class="explaination-content">Financially, today might present chances for stability and growth. It's an opportune time to review your financial plans or investment strategies. Stay vigilant, and consider well-thought-out decisions for a secure financial outlook.</p>
+			</div>
+		</section>
+
+		<a href="fc-1.html" type="button" id="df-result-to-cookie" class="main-button">Let's go get a fortune cookie!</a>
+		
+		<a href="index.html" type="button" id="df-back-to-home-page" class="back-to">Back to Home Page</a>
+	</main>
+	<!--
+		This is where you should link your JS file.
+	-->
+
+<script>
+    var randomscore = Math.floor(Math.random() * 11) + 90;
+   	document.getElementById('randomscore').innerHTML = randomscore;
+</script>
+
+</body>
+
+</html>
