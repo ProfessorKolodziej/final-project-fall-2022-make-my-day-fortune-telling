@@ -13,8 +13,8 @@
 .ba-result {
 	display: flex;
 	min-width: 320px;
-	padding: 50px 0;
-	gap: 40px;
+	padding: 40px 0;
+	gap: 30px;
 	flex-direction: column;
 	align-items: center;
 }
@@ -215,7 +215,7 @@ p {
 #ba-result-with-pic {
 	position: relative;
 	margin: auto;
-	max-width: 80%;
+	max-width: 70%;
 }
 .ba-result-pic,
 .cookie-result-pic {
@@ -227,11 +227,11 @@ p {
 }
 #ba-result {
 	position: absolute;
-	top: 50%;
-    right:12%;
-    transform: translateY(-50%);
+	top: 45%;
+    right:7%;
+    transform: translateY(-40%);
     max-width: 40%; 
-	width: 100%;
+	width: 80%;
 	overflow: hidden;
 	color: #244437;
 }
