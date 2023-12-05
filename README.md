@@ -1,4 +1,4 @@
-# Final Project (Replace with your project name)
+# Final Project - Make My Day - Yiyang Dai
 
 ## Description
 
