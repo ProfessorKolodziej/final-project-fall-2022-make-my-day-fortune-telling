@@ -11,9 +11,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800;900&family=Texturina:opsz,wght@12..72,400;12..72,500;12..72,600;12..72,700;12..72,800;12..72,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<!--
-		This is where you should link your CSS file.
-	-->
 </head>
 
 <body>
@@ -31,30 +28,28 @@
 				<h1 id="randomscore" class="score-result"></h1>
 				<h4 class="score-total">/100</h4>
 			</section>
-			<p class="df-result-content">
-				Overall, things appear quite positive today. Even in the face of challenges, you're likely to find solutions effortlessly. Your adaptable nature and resilience will guide you through any difficulties, allowing you to navigate the day with ease and success.
-			</p>
+			<p class="df-result-content"></p>
 		</section>
 		
 		<section class="explaination-part">
 			<div id="relationships" class="explain">
 				<h3 id="relationships-title" class="explaination-title">Relationships</h3>
-				<p id="relationships-content" class="explaination-content">In relationships, whether single, in a romantic relationship, or married, the day promises better understanding and harmony. Focus on fostering connections with friends, family, and colleagues. Embrace open and empathetic conversations, encouraging cooperation and understanding for smoother interactions.</p>
+				<p id="relationships-content" class="explaination-content"></p>
 			</div>
 
 			<div id="health-wellness" class="explain">
 				<h3 id="health-wellness-title" class="explaination-title">Health & Wellness</h3>
-				<p id="health-wellness-content" class="explaination-content">Health-wise, it's a good day. Ensure you maintain a balance between rest and activity. Listen to your body's cues and engage in activities that promote both physical and mental well-being. Prioritize self-care and find serenity in your routine.</p>
+				<p id="health-wellness-content" class="explaination-content"></p>
 			</div>
 
 			<div id="career-education" class="explain">
 				<h3 id="career-education-title" class="explaination-title">Career & Education</h3>
-				<p id="career-education-content" class="explaination-content">Embrace new programs and seize today's opportunities for growth and advancement in the career path. Simultaneously, whether a student or pursuing personal development, do not focus too much on grades. Instead, only concentrate on acquiring new knowledge and skills that will help to grow.</p>
+				<p id="career-education-content" class="explaination-content"></p>
 			</div>
 
 			<div id="wealth-finance" class="explain">
 				<h3 id="wealth-finance-title" class="explaination-title">Wealth & Finance</h3>
-				<p id="wealth-finance-content" class="explaination-content">Financially, today might present chances for stability and growth. It's an opportune time to review your financial plans or investment strategies. Stay vigilant, and consider well-thought-out decisions for a secure financial outlook.</p>
+				<p id="wealth-finance-content" class="explaination-content"></p>
 			</div>
 		</section>
 
@@ -62,14 +57,16 @@
 		
 		<a href="index.html" type="button" id="df-back-to-home-page" class="back-to">Back to Home Page</a>
 	</main>
-	<!--
-		This is where you should link your JS file.
-	-->
 
-<script>
-    var randomscore = Math.floor(Math.random() * 11) + 90;
-   	document.getElementById('randomscore').innerHTML = randomscore;
-</script>
+	<script src="/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/js/scripts.js"></script>
+	<script>
+        generateRandomScore();
+		generateOverallFortune();
+		generateRelationshipsFortune();
+		generateHealthFortune();
+		generateCareerEducationFortune();
+		generateWealthFortune();
+    </script>
 
 </body>
 

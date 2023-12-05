@@ -11,9 +11,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800;900&family=Texturina:opsz,wght@12..72,400;12..72,500;12..72,600;12..72,700;12..72,800;12..72,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<!--
-		This is where you should link your CSS file.
-	-->
 </head>
 
 <body>
@@ -64,7 +61,7 @@
 			</section>
 			
 			<section id="quiz-3" class="quiz">
-				<legend class="quiz-title">Current Mood</legend>
+				<legend id="current-mood" class="quiz-title">Current Mood</legend>
 				<div class="current-mood-options">
 					<label>
 						<input type="checkbox" name="Current Mood" value="Happy/Joyful">Happy/Joyful
@@ -119,18 +116,11 @@
 			<p class="overlay-content">Conveys feelings of sadness, unhappiness, or distress.</p>
 		</div>
 	</div>
-
-	<!--
-		This is where you should link your JS file.
-	-->
-
-<script>
-var today = new Date();
-var options = { year: 'numeric', month: 'long', day: 'numeric' };
-var formattedDate = today.toLocaleDateString('en-US', options);
-document.getElementById('df-date').innerHTML = formattedDate;
-</script>
-
+ 
+	<script src="/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/js/scripts.js"></script>
+	<script>
+        updateFormattedDate();
+    </script>
 </body>
 
 </html>
