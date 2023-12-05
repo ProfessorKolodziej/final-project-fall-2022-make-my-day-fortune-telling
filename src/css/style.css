@@ -12,7 +12,6 @@
 .ba-1,
 .ba-result {
 	display: flex;
-	min-width: 320px;
 	padding: 40px 0;
 	gap: 30px;
 	flex-direction: column;
