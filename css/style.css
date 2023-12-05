@@ -18,7 +18,7 @@
 	align-items: center;
 }
 .about {
-	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('https://github.com/ProfessorKolodziej/final-project-fall-2022-make-my-day-fortune-telling/blob/main/src/images/about-back.png');
+	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('https://github.com/ProfessorKolodziej/final-project-fall-2022-make-my-day-fortune-telling/blob/main/src/images/about-back.png?raw=true');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -133,7 +133,7 @@ p {
 /* Book of Answers page */
 .ba-1,
 .ba-result {
-	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/book-back.png');
+	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('https://github.com/ProfessorKolodziej/final-project-fall-2022-make-my-day-fortune-telling/blob/main/src/images/book-back.png?raw=true');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
