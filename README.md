@@ -2,7 +2,11 @@
 
 ## Description
 
-Please add a brief description of your final project here.
+In today's fast-paced and interconnected world, people feel overwhelmed by work, personal life, and societal expectations. Constant information flow and comparing oneself to others can cause stress and a feeling of being adrift, leading to nervousness and anxiety. People often seek tools or methods to alleviate stress.
+
+With this background, a daily fortune telling application - “Make My Day” is designed. Unlike normal horoscopes or traditional fortune telling apps, it predominantly conveys a positive and empowering concept and provides users with daily guidance to navigate life's complexities.
+
+Moreover, in addition to daily fortune, the website also includes two additional features - "Book of Answers" and "Fortune Cookies", to provide users with lucky blessings.
 
 ## Project Documentation
 
