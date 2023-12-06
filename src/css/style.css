@@ -195,20 +195,6 @@ p {
 		max-width: 15%;
 	}
 }
-.cookie-1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	max-width: 50%;
-	height: auto;
-
-	@media (width >= 768px) {
-		max-width: 30%;
-	}
-	@media (width >= 1024px) {
-		max-width: 20%;
-	}
-}
 .main-button {
 	display: flex;
 	padding: 5px 10px;
@@ -235,9 +221,9 @@ p {
 
 
 /* Book of Answers-answer page */
-.ba-result-part,
-.fc-result-part {
-	display: relative;
+#ba-result-with-pic,
+#fc-result-with-pic {
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 50px 40px;
@@ -250,31 +236,44 @@ p {
 	width: 80%;
 }
 .ba-result-pic {
-	display: absolute;
-	justify-content: center;
-	align-items: center;
 	width: 100%;
+	max-width: 100%;
 	height: auto;
-
+	
+	@media (width >= 768px) {
+        max-width: 80%;
+    }
+    @media (width >= 1024px) {
+        max-width: 60%;
+    }
 }
 
 #ba-result-content {
 	position: absolute;
+	text-align: center;
 	top: 40%;
-    right: 17%;
+    right: 19%;
 	font-size: 12px;
-    transform: translateY(-25%);
-    max-width: 30%;
+    transform: translate(-18%, -25%);
+    max-width: 25%;
 	word-wrap: break-word;
 	overflow: hidden;
 	color: #244437;
 
 	@media (width >= 768px) {
 		font-size: 14px;
-
+		top: 38%;
+    	right: 24%;
+		font-size: 14px;
+    	transform: translate(-20% ,-25%);
+    	max-width: 20%;
 	}
 	@media (width >= 1024px) {
 		font-size: 16px;
+		top: 34%;
+    	right: 31%;
+    	transform: translate(-15%, -25%);
+    	max-width: 15%;
 	}
 }
 
@@ -309,6 +308,20 @@ p {
 #fc-instruction {
 	color: #D39C29;
 }
+.cookie-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 50%;
+	height: auto;
+
+	@media (width >= 768px) {
+		max-width: 30%;
+	}
+	@media (width >= 1024px) {
+		max-width: 20%;
+	}
+}
 #fc-to-see-result,
 #fc-result-to-cookie {
 	color: #FFF;
@@ -325,9 +338,10 @@ p {
 #fc-result-with-pic {
 	position: relative;
 	margin: auto;
-	width: 100%;
+	width: 80%;
 	align-items: center;
 }
+
 .cookie-result-pic {
 	width: 100%;
 	height: auto;
@@ -341,11 +355,11 @@ p {
 }
 #fc-result {
 	position: absolute;
-	top: 35%;
-    right: 4%;
-    transform: translateY(-50%);
+	top: 41%;
+    right: 15%;
+    transform: translate(-25%, -50%);
 	font-size: 12px;
-    max-width: 60%; 
+    max-width: 45%; 
 	width: 100%;
 	overflow: hidden;
 	color: #D76735;
@@ -353,18 +367,18 @@ p {
 
 	@media (width >= 768px) {
 		font-size: 14px;
-		top: 39%;
-    	right: 23%;
-    	transform: translateY(-50%);
-		max-width: 48%; 
+		top: 41%;
+    	right: 18%;
+    	transform: translate(-20%, -50%);
+		max-width: 40%; 
 		transform: rotate(5deg);
 	}
 	@media (width >= 1024px) {
 		font-size: 16px;
-		top: 39%;
-    	right: 42%;
-    	transform: translateY(-50%);
-		max-width: 35%; 
+		top: 41%;
+    	right: 24%;
+    	transform: translate(-40%, -50%);
+		max-width: 33%; 
 		transform: rotate(5deg);
 	}
 }
@@ -542,6 +556,35 @@ h4 {
 }
 
 /* overlay-page */
+#overlay {
+	display: none;
+	max-width: 30%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 10px;
+	gap: 25px;
+	border-radius: 6px;
+	background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/overlay-back.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+  	top: 100%; 
+  	left: 100%; 
+  	transform: translate(-125%, -125%);
+
+	@media (width >= 768px) {
+		max-width: 15%;
+		transform: translate(-200%, -125%);
+	}
+	@media (width >= 1024px) {
+		max-width: 15%;
+		transform: translate(-300%, -135%);
+	}
+}
+#overlay.visible {
+	display: block;
+}
 .overlay-detail {
 	display: flex;
 	flex-direction: column;
@@ -557,30 +600,4 @@ h4 {
 	font-size: 8px;
 	font-weight: 600;
 	line-height: normal;
-}
-
-
-
-
-
-#overlay {
-	display: none;
-	width: 25%;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 15px 10px;
-	gap: 25px;
-	border-radius: 6px;
-	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/overlay-back.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-  	top: 100%; 
-  	left: 100%; 
-  	transform: translate(-125%, -125%);
-}
-
-#current-mood:hover + #overlay {
-	display: block;
 }

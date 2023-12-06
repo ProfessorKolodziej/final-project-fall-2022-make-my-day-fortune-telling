@@ -322,3 +322,17 @@ function generateWealthFortune() {
     }
 document.addEventListener('DOMContentLoaded', getWealthFortune);
 }
+
+// df-1 page - hover effect.
+function HoverCurrentMood() {
+    var currentMood = document.getElementById('current-mood');
+    var overlay = document.getElementById('overlay');
+  
+    currentMood.addEventListener('mousedown', function() {
+      overlay.classList.add('visible');
+    });
+  
+    currentMood.addEventListener('mouseup', function() {
+      overlay.classList.remove('visible');
+    });
+  }
