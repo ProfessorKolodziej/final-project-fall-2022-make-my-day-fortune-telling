@@ -154,7 +154,7 @@ p {
 /* Book of Answers page */
 .ba-1,
 .ba-result {
-	background: linear-gradient(rgb(255 255 255 / 40%), rgb(255 255 255 / 40%)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/book-back.png');
+	background: linear-gradient(rgb(255 255 255 / 40%), rgb(255 255 255 / 40%)), url('../images/book-back.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -304,7 +304,7 @@ p {
 /* Fortune Cookie page */
 .fc-1,
 .fc-result {
-	background: linear-gradient(rgb(255 255 255 / 40%), rgb(255 255 255 / 40%)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/cookie-back.png');
+	background: linear-gradient(rgb(255 255 255 / 40%), rgb(255 255 255 / 40%)), url('../images/cookie-back.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -418,7 +418,7 @@ p {
 /* Daily Fortune page */
 .df-1,
 .df-result {
-	background: linear-gradient(rgb(255 255 255 / 40%), rgb(255 255 255 / 40%)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/df-back.png');
+	background: linear-gradient(rgb(255 255 255 / 40%), rgb(255 255 255 / 40%)), url('../images/df-back.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -619,7 +619,7 @@ h4 {
 	padding: 15px 10px;
 	gap: 25px;
 	border-radius: 6px;
-	background: linear-gradient(rgb(255 255 255 / 90%), rgb(255 255 255 / 90%)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/overlay-back.png');
+	background: linear-gradient(rgb(255 255 255 / 90%), rgb(255 255 255 / 90%)), url('../images/overlay-back.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
