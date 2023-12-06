@@ -558,20 +558,29 @@ h4 {
 /* overlay-page */
 #overlay {
 	display: none;
-	width: 25%;
+	max-width: 30%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 15px 10px;
 	gap: 25px;
 	border-radius: 6px;
-	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/overlay-back.png');
+	background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/overlay-back.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
   	top: 100%; 
   	left: 100%; 
   	transform: translate(-125%, -125%);
+
+	@media (width >= 768px) {
+		max-width: 15%;
+		transform: translate(-200%, -125%);
+	}
+	@media (width >= 1024px) {
+		max-width: 15%;
+		transform: translate(-300%, -135%);
+	}
 }
 #overlay.visible {
 	display: block;
