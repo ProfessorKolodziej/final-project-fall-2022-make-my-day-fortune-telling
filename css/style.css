@@ -12,13 +12,16 @@
 .ba-1,
 .ba-result {
 	display: flex;
+	min-width: 375px;
 	padding: 40px 0;
 	gap: 30px;
 	flex-direction: column;
 	align-items: center;
+
+	}
 }
 .about {
-	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('https://github.com/ProfessorKolodziej/final-project-fall-2022-make-my-day-fortune-telling/blob/main/src/images/about-back.png?raw=true');
+	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/about-back.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -34,6 +37,13 @@
 	font-size: 12px;
 	font-weight: 700;
 	cursor: pointer;
+
+	@media (width >= 768px) {
+		padding: 5px 40px;
+	}
+	@media (width >= 1024px) {
+		padding: 5px 60px;
+	}
 }
 #about-nav-about {
 	color: #D4567D;
@@ -133,7 +143,7 @@ p {
 /* Book of Answers page */
 .ba-1,
 .ba-result {
-	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('https://github.com/ProfessorKolodziej/final-project-fall-2022-make-my-day-fortune-telling/blob/main/src/images/book-back.png?raw=true');
+	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/book-back.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -171,13 +181,19 @@ p {
 #ba-instruction {
 	color: #244437;
 }
-.book-1,
-.cookie-1 {
+.book-1{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 50%;
+	max-width: 30%;
 	height: auto;
+
+	@media (width >= 768px) {
+		max-width: 20%;
+	}
+	@media (width >= 1024px) {
+		max-width: 15%;
+	}
 }
 .main-button {
 	display: flex;
@@ -203,10 +219,11 @@ p {
 	text-decoration: none;
 }
 
+
 /* Book of Answers-answer page */
-.ba-result-part,
-.fc-result-part {
-	display: relative;
+#ba-result-with-pic,
+#fc-result-with-pic {
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 50px 40px;
@@ -215,26 +232,49 @@ p {
 #ba-result-with-pic {
 	position: relative;
 	margin: auto;
-	max-width: 50%;
-}
-.ba-result-pic,
-.cookie-result-pic {
-	display: absolte;
-	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: auto;
+	width: 80%;
 }
+.ba-result-pic {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	
+	@media (width >= 768px) {
+        max-width: 80%;
+    }
+    @media (width >= 1024px) {
+        max-width: 60%;
+    }
+}
+
 #ba-result-content {
 	position: absolute;
 	text-align: center;
-	top: 42%;
-    right:22%;
-    transform: translateY(-25%);
-    max-width: 120px;
+	top: 40%;
+    right: 19%;
+	font-size: 12px;
+    transform: translate(-18%, -25%);
+    max-width: 25%;
 	word-wrap: break-word;
 	overflow: hidden;
 	color: #244437;
+
+	@media (width >= 768px) {
+		font-size: 14px;
+		top: 38%;
+    	right: 24%;
+		font-size: 14px;
+    	transform: translate(-20% ,-25%);
+    	max-width: 20%;
+	}
+	@media (width >= 1024px) {
+		font-size: 16px;
+		top: 34%;
+    	right: 31%;
+    	transform: translate(-15%, -25%);
+    	max-width: 15%;
+	}
 }
 
 /* Fortune Cookie page */
@@ -268,6 +308,20 @@ p {
 #fc-instruction {
 	color: #D39C29;
 }
+.cookie-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 50%;
+	height: auto;
+
+	@media (width >= 768px) {
+		max-width: 30%;
+	}
+	@media (width >= 1024px) {
+		max-width: 20%;
+	}
+}
 #fc-to-see-result,
 #fc-result-to-cookie {
 	color: #FFF;
@@ -284,19 +338,49 @@ p {
 #fc-result-with-pic {
 	position: relative;
 	margin: auto;
-	max-width: 100%;
+	width: 80%;
+	align-items: center;
+}
+
+.cookie-result-pic {
+	width: 100%;
+	height: auto;
+
+	@media (width >= 768px) {
+		max-width: 80%;
+	}
+	@media (width >= 1024px) {
+		max-width: 60%;
+	}
 }
 #fc-result {
 	position: absolute;
-	top: 37%;
-    right: 4%;
-    transform: translateY(-50%);
+	top: 41%;
+    right: 15%;
+    transform: translate(-25%, -50%);
 	font-size: 12px;
-    max-width: 60%; 
+    max-width: 45%; 
 	width: 100%;
 	overflow: hidden;
 	color: #D76735;
 	transform: rotate(5deg);
+
+	@media (width >= 768px) {
+		font-size: 14px;
+		top: 41%;
+    	right: 18%;
+    	transform: translate(-20%, -50%);
+		max-width: 40%; 
+		transform: rotate(5deg);
+	}
+	@media (width >= 1024px) {
+		font-size: 16px;
+		top: 41%;
+    	right: 24%;
+    	transform: translate(-40%, -50%);
+		max-width: 33%; 
+		transform: rotate(5deg);
+	}
 }
 
 /* Daily Fortune page */
@@ -337,16 +421,37 @@ p {
 	padding: 0px 30px;
 	align-self: stretch;
 }
-.quiz-part,
-.explaination-part {
-	display: flex;
+.quiz-part {
+	display: grid;
+	grid-template-columns: 1fr;
 	padding: 30px 30px;
 	gap: 30px;
-	flex-direction: column;
 	align-items: center;
-	align-self: stretch;
 	background: rgba(255, 255, 255, 0.6);
+
+	@media (width >= 1024px) {
+		grid-template-columns: repeat(3, 1fr);
+		align-items: flex-start;
+	}
 }
+.explaination-part {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 30px 30px;
+	gap: 30px;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.6);
+
+	@media (width >= 768px) {
+		grid-template-columns: repeat(2, 2fr);
+		align-items: flex-start;
+	}
+	@media (width >= 1024px) {
+		grid-template-columns: repeat(4, 1fr);
+		align-items: flex-start;
+	}
+}
+
 #quiz-1,
 #quiz-2,
 #quiz-3 {
@@ -354,7 +459,9 @@ p {
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
-	align-self: stretch;
+	@media (width >= 1024px) {
+		align-items: flex-start;
+	}
 }
 #quiz-1-tips {
 	font-size: 9px;
@@ -378,16 +485,15 @@ input {
 }
 .gender-options {
 	color: #1B7676;
-	text-align: center;
 	font-family: Texturina, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-	align-self: stretch;
+	display: grid;
 	flex-wrap: wrap;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content:flex-start;
+	align-items: flex-start;
+	gap: 20px;
 }
 .current-mood-options {
 	color: #1B7676;
@@ -396,10 +502,9 @@ input {
 	font-weight: 500;
 	gap: 10px;
 	display: grid;
-	flex-wrap: wrap;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-	align-items: center;
+    justify-content: flex-start;
+	align-items: flex-start;
 }
 .gender-options input,
 .current-mood-options input {
@@ -451,23 +556,6 @@ h4 {
 }
 
 /* overlay-page */
-.overlay-detail {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	align-self: stretch;
-}
-.overlay-content {
-	align-self: stretch;
-	text-align: center;
-	color: #1B7676;
-	font-family: Texturina;
-	font-size: 8px;
-	font-weight: 600;
-	line-height: normal;
-}
-
 #overlay {
 	display: none;
 	width: 25%;
@@ -485,7 +573,22 @@ h4 {
   	left: 100%; 
   	transform: translate(-125%, -125%);
 }
-
-#current-mood:hover + #overlay {
+#overlay.visible {
 	display: block;
+}
+.overlay-detail {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: stretch;
+}
+.overlay-content {
+	align-self: stretch;
+	text-align: center;
+	color: #1B7676;
+	font-family: Texturina;
+	font-size: 8px;
+	font-weight: 600;
+	line-height: normal;
 }
