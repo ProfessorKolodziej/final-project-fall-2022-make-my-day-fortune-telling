@@ -20,7 +20,7 @@
 	}
 
 .about {
-	background: linear-gradient(rgb(255 255 255 / 70%), rgb(255 255 255 / 70%)), url('/Users/yangdai/Desktop/final-project-fall-2022-make-my-day-fortune-telling/src/images/about-back.png');
+	background: linear-gradient(rgb(255 255 255 / 70%), rgb(255 255 255 / 70%)), url('../images/about-back.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
